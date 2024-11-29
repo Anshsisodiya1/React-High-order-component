@@ -1,0 +1,109 @@
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eef2f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.appd {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.appd h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.appd p {
+  font-size: 1.1rem;
+  color: #4f4f4f;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.hoc-hover {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background: #ff5733;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hoc-hover:hover {
+  background-color: #e84118;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .appd {
+    padding: 30px;
+  }
+
+  .appd h1 {
+    font-size: 1.8rem;
+  }
+
+  .appd p {
+    font-size: 1rem;
+  }
+
+  button, .hoc-hover {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
